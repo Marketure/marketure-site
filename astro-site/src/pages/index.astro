@@ -1,0 +1,14 @@
+
+---
+import { client } from '../lib/sanity.js';
+
+const hero = await client.fetch(`*[_type == "hero"][0]`);
+---
+
+<html>
+  <head><title>{hero.title}</title></head>
+  <body>
+    <h1>{hero.title}</h1>
+    <p>{hero.subtitle}</p>
+  </body>
+</html>

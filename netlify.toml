@@ -1,0 +1,7 @@
+
+[build]
+  command = "npm run build"
+  publish = "astro-site/dist"
+
+[dev]
+  framework = "#custom"
